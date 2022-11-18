@@ -3,7 +3,7 @@ import requests
 def unreleased():
     """Retorna los próximos talleres en codigofacilito
 
-    >>> type(unreleased()) == type(list())
+    >>> type(unreleased()) == type(dict())
     True
     """
     endpoint = 'https://codigofacilito.com/api/v2/workshops/unreleased'
