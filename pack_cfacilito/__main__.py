@@ -18,5 +18,6 @@ logging.basicConfig(level=logging.DEBUG) #que imprima mensajes de tipo DEBUG par
 if __name__ == '__main__':
     logging.debug('>>> Comienza ejecucion desde dentro de __main__.py\n')
     workshops = unreleased()
+    logging.debug(unreleased.__doc__) #imprime el atributo de documentacion de la funcion
     print(workshops)
     logging.debug('\n>>> Finaliza ejecucion desde dentro de __main__.py')
