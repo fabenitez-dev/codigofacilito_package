@@ -13,11 +13,14 @@ ERROR -> 40
 CRITICAL -> 50
 """
 
-logging.basicConfig(level=logging.DEBUG) #que imprima mensajes de tipo DEBUG para abajo
+logging.basicConfig(level=logging.INFO) #que imprima mensajes de tipo INFO para abajo
+
+def main():
+    logging.info(unreleased())
 
 if __name__ == '__main__':
     logging.debug('>>> Comienza ejecucion desde dentro de __main__.py\n')
-    workshops = unreleased()
-    logging.debug(unreleased.__doc__) #imprime el atributo de documentacion de la funcion
-    print(workshops)
+
+    main()
+  
     logging.debug('\n>>> Finaliza ejecucion desde dentro de __main__.py')
