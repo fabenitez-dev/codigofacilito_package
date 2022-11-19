@@ -8,7 +8,7 @@ Para poder exponer nuestra app para instalarla desde PyPi
 this_directory = Path(__file__).parent
 long_description = (this_directory/'README.md').read_text()
 
-VERSION = '0.0.1'
+VERSION = '0.0.2'
 DESCRIPTION = 'Consume API de codigofacilito.com'
 PACKAGE_NAME = 'pack_cfacilito'
 AUTHOR = 'Francisco Alejandro Benitez'
@@ -21,7 +21,7 @@ setup(
     entry_points={ #cuando alguien instale el paquete podrá ejecutarlo con el nombre cfacilito
         "console_scripts":
             ["cfacilito=pack_cfacilito.__main__:main"]
-    }
+    },
     version = VERSION,
     license='MIT', #tipo de licencia necesita el archivo LICENSE.txt
     description = DESCRIPTION,
